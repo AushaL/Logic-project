@@ -1,13 +1,6 @@
 import ThemeCard from "../ThemeCard/ThemeCard";
 import classes from "./ThemesCards.module.scss";
-
-interface IThemeCardProps {
-  name: string;
-  id: string;
-  image: string;
-  bgColor: string;
-  tags: string[];
-}
+import { IThemeCardProps } from "src/constants/interfaces";
 
 interface IThemesCardsProps {
   themesItems: IThemeCardProps[];

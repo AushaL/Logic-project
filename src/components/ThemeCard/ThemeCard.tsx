@@ -1,14 +1,7 @@
 import classes from "./ThemeCard.module.scss";
+import { IThemeCardProps } from "src/constants/interfaces";
 
-interface IThemeCardProps {
-  name: string;
-  id: string;
-  image: string;
-  bgColor: string;
-  tags: string[];
-}
-
-const ThemeCard = ({ themeData }: IThemeCardProps) => {
+const ThemeCard = ({ themeData }: { themeData: IThemeCardProps }) => {
   return (
     <li className={classes.card}>
       <div

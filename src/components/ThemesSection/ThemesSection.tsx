@@ -1,15 +1,8 @@
+import { useEffect, useState } from "react";
 import ThemesOptions from "../ThemesOptions/ThemesOptions";
 import ThemesCards from "../ThemesCards/ThemesCards";
 import classes from "./ThemesSection.module.scss";
-import { useEffect, useState } from "react";
-
-interface IThemeCardProps {
-  name: string;
-  id: string;
-  image: string;
-  bgColor: string;
-  tags: string[];
-}
+import { IThemeCardProps } from "src/constants/interfaces";
 
 const ThemesSection = () => {
   const [activeOption, setActiveOption] = useState("Все темы");
