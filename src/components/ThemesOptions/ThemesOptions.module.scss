@@ -1,0 +1,24 @@
+.wrapper {
+  width: 264px;
+  padding: 12px;
+  border: 1px solid #cfcfe4;
+  border-radius: 18px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  li {
+    padding: 12px;
+    padding-right: 47px;
+    cursor: pointer;
+  }
+}
+
+.active {
+  border-radius: 12px;
+  color: #ffffff;
+  background-color: #5fbf77;
+}
